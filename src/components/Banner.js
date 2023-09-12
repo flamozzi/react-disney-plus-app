@@ -60,10 +60,7 @@ const Banner = () => {
           backgroundSize: "cover",
         }}
       >
-        <div
-          style={{ fontSize: 10 }}
-          className="banner__contents"
-        >
+        <div style={{ fontSize: 10 }} className="banner__contents">
           <h1 className="banner__title">
             {movie.title || movie.name || movie.original_name}
           </h1>
@@ -109,7 +106,7 @@ const Iframe = styled.iframe`
   opacity: 0.65;
   border: none;
 
-  &::after {
+  &:after {
     content: "";
     position: absolute;
     top: 0;
